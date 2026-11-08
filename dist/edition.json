@@ -1,0 +1,72 @@
+{
+  "updated": "2026-11-08T13:22:18.425552+00:00",
+  "camera": {
+    "distance": 600.0,
+    "zoom_min": 180.0,
+    "zoom_max": 1400.0,
+    "zoom_step": 60.0,
+    "field_of_view": 75.0,
+    "first_person_fov": 85.0,
+    "gamepad_camera": true
+  },
+  "modes": {
+    "xp": "Normal",
+    "loot": "Normal",
+    "rarity": "Normal",
+    "special": "Normal",
+    "splinters": "Normal",
+    "xp_orbs": "Normal",
+    "health_orbs": "Normal",
+    "boss_difficulty": "Existing"
+  },
+  "currency": {
+    "splintersToG": 2.25,
+    "conversionStep": 4
+  },
+  "guides": {
+    "start": {
+      "title": "Your first hero",
+      "intro": "Choose a hero. Make the story your own.",
+      "blocks": [
+        {
+          "title": "One free permanent hero",
+          "text": "Use Choose Free Hero, then Confirm Free Hero on an eligible hero. This choice does not spend Eternity Splinters."
+        },
+        {
+          "title": "Try before you choose",
+          "text": "Available trial heroes can reach level 10. Permanently unlock a hero to continue beyond the trial cap."
+        },
+        {
+          "title": "Earn the rest",
+          "text": "Collect Eternity Splinters as you play, then use the roster or shop to unlock more heroes. The catalog lists reference unlock costs."
+        },
+        {
+          "title": "Bring a Team-Up",
+          "text": "Select an owned companion in Team-Up Heroes with Set Active. Active marks the selected companion. Press K to summon your Team-Up."
+        }
+      ]
+    },
+    "camera": {
+      "title": "Camera & controls",
+      "intro": "Get closer to the action.",
+      "blocks": [
+        {
+          "title": "Three ways to see the world",
+          "text": "Press V or F6 to cycle third person, overhead and first person. Third person is selected when a level loads."
+        },
+        {
+          "title": "Smooth follow-camera zoom",
+          "text": "Scroll up to move closer and down to pull back. The third-person camera remembers its zoom when you change views."
+        },
+        {
+          "title": "Controller camera",
+          "text": "With controller input active, use the right stick to orbit in third-person and first-person views. The camera holds its angle when the stick returns to center."
+        },
+        {
+          "title": "Achievements shortcut",
+          "text": "Press Shift + V to open Achievements."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030c16">
+  <meta name="description" content="The Marvel Heroes Compendium. Explore heroes, equipment, powers, vendors, missions and the world of Marvel Heroes.">
+  <title>Heroes · Marvel Heroes Compendium</title>
+  <link rel="icon" href="assets/marvel-logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to catalog</a>
+  <button id="mobile-menu" class="mobile-menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <div id="shade" class="shade" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="Compendium navigation">
+    <a class="brand" href="#heroes" aria-label="Marvel Heroes Compendium home">
+      <img src="assets/marvel-logo.png" alt="MARVEL" width="180" height="72">
+      <span class="brand-heroes">HEROES</span>
+      <span class="brand-sub">COMPENDIUM</span>
+    </a>
+    <div class="sidebar-rule"></div>
+    <div class="nav-label">THE DATABASE <span>01—13</span></div>
+    <nav id="catalog-nav" aria-label="Catalog sections"></nav>
+    <div class="nav-label guide-label">FIELD GUIDE</div>
+    <nav class="guides-nav" aria-label="Game guides">
+      <a href="#guide/start"><span class="nav-icon">↗</span>Getting started</a>
+      <a href="#guide/camera"><span class="nav-icon">◎</span>Camera & controls</a>
+      <a href="#guide/gameplay"><span class="nav-icon">≋</span>Gameplay settings</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> MARVEL HEROES <a href="#guide/sources">Sources</a></div>
+  </aside>
+  <main id="main" tabindex="-1">
+    <header class="topbar"><span>MARVEL HEROES <span class="slash">/</span> <span id="breadcrumb">DATABASE</span></span><button id="saved-toggle" class="quiet-button" aria-pressed="false">☆ <span>Saved entries</span> <b id="saved-count">0</b></button></header>
+    <div class="content">
+      <section class="page-heading">
+        <div><div class="eyebrow" id="eyebrow">YOUR GUIDE TO THE MARVEL UNIVERSE</div><h1 id="page-title">HEROES <span id="section-count">—</span></h1><p id="page-intro">Loading the compendium…</p></div>
+        <div class="edition-mark"><span class="status-dot"></span> CURRENT EDITION<br><small id="updated-date"></small></div>
+      </section>
+      <div id="error" class="notice" hidden></div>
+      <section id="catalog-view" aria-label="Catalog">
+        <div class="toolbar">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a hero…" aria-label="Search this catalog" autocomplete="off"><kbd>/</kbd></label>
+          <label class="filter-wrap"><span class="sr-only">Filter category</span><select id="category-filter"><option value="">All categories</option></select></label>
+          <label class="sort-wrap"><span class="sr-only">Sort entries</span><select id="sort"><option value="name">Name A—Z</option><option value="name-desc">Name Z—A</option><option value="cost">Splinters: low to high</option></select></label>
+          <div class="view-switch" role="group" aria-label="Display mode"><button id="grid-mode" aria-label="Grid view" aria-pressed="true">▦</button><button id="table-mode" aria-label="Table view" aria-pressed="false">☰</button></div>
+        </div>
+        <div class="results-line"><span id="result-summary" role="status" aria-live="polite"></span><button id="reset" class="text-button" hidden>Clear filters ×</button><span id="catalog-note">Explore an entry for details</span></div>
+        <div id="results" class="cards" aria-busy="true"></div>
+        <div id="empty" class="empty" hidden><span>⌕</span><h2>No matching entries</h2><p>Try another name or clear your filters.</p><button id="empty-reset" class="hero-button">Clear filters</button></div>
+        <div class="pagination"><label>Show <select id="page-size" aria-label="Entries per page"><option>24</option><option>48</option><option>96</option></select> entries</label><div><button id="prev" aria-label="Previous page">←</button><span id="page-info"></span><button id="next" aria-label="Next page">→</button></div></div>
+      </section>
+      <section id="guide-view" class="guide-view" hidden></section>
+      <footer class="footer"><span>MARVEL HEROES <span class="muted">/ COMPENDIUM</span></span><span>Heroes. Gear. Every adventure. <a href="#guide/sources">Credits & sources ↗</a></span></footer>
+    </div>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title"><div id="detail-body"></div><button id="close-detail" class="close-detail" aria-label="Close entry">×</button></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

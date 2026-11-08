@@ -1,0 +1,7 @@
+.cache/
+checks/
+__pycache__/
+*.zip
+*.log
+.build-state/
+/AGENTS.md
