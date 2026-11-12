@@ -8,3 +8,7 @@
 @media(max-width:370px){.card-visual{height:165px}.card h2{font-size:16px}.content{padding-left:14px;padding-right:14px}.guide-measures{grid-template-columns:1fr}.detail-top.has-art{padding-right:125px}.detail-top img.detail-art{width:135px}.detail-top h2{font-size:24px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 .objectives{padding-left:19px;font-size:12px;line-height:1.9;color:#a9cce0}.objectives li{padding:5px 0;border-bottom:1px solid var(--line)}
+
+/* Cosmic Crisis master artwork retains its original aspect ratio and alpha. */
+.brand img{width:204px;max-width:100%;height:auto;filter:drop-shadow(0 2px 10px #0008)}
+.brand-sub{margin-top:13px}.brand-heroes{display:none}

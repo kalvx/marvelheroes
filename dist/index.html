@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#030c16">
-  <meta name="description" content="The Marvel Heroes Compendium. Explore heroes, equipment, powers, vendors, missions and the world of Marvel Heroes.">
-  <title>Heroes · Marvel Heroes Compendium</title>
-  <link rel="icon" href="assets/marvel-logo.png">
+  <meta name="description" content="The Marvel Cosmic Crisis Compendium. Explore heroes, equipment, powers, vendors, missions and the world of Marvel Heroes.">
+  <title>Heroes · Marvel Cosmic Crisis Compendium</title>
+  <link rel="icon" href="assets/cosmic-crisis-logo.png">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
@@ -15,9 +15,8 @@
   <button id="mobile-menu" class="mobile-menu" aria-label="Open navigation" aria-expanded="false">☰</button>
   <div id="shade" class="shade" hidden></div>
   <aside class="sidebar" id="sidebar" aria-label="Compendium navigation">
-    <a class="brand" href="#heroes" aria-label="Marvel Heroes Compendium home">
-      <img src="assets/marvel-logo.png" alt="MARVEL" width="180" height="72">
-      <span class="brand-heroes">HEROES</span>
+    <a class="brand" href="#heroes" aria-label="Marvel Cosmic Crisis Compendium home">
+      <img src="assets/cosmic-crisis-logo.png" alt="Marvel Cosmic Crisis" width="1959" height="803">
       <span class="brand-sub">COMPENDIUM</span>
     </a>
     <div class="sidebar-rule"></div>
@@ -29,10 +28,10 @@
       <a href="#guide/camera"><span class="nav-icon">◎</span>Camera & controls</a>
       <a href="#guide/gameplay"><span class="nav-icon">≋</span>Gameplay settings</a>
     </nav>
-    <div class="sidebar-bottom"><span class="status-dot"></span> MARVEL HEROES <a href="#guide/sources">Sources</a></div>
+    <div class="sidebar-bottom"><span class="status-dot"></span> MARVEL COSMIC CRISIS <a href="#guide/sources">Sources</a></div>
   </aside>
   <main id="main" tabindex="-1">
-    <header class="topbar"><span>MARVEL HEROES <span class="slash">/</span> <span id="breadcrumb">DATABASE</span></span><button id="saved-toggle" class="quiet-button" aria-pressed="false">☆ <span>Saved entries</span> <b id="saved-count">0</b></button></header>
+    <header class="topbar"><span>MARVEL COSMIC CRISIS <span class="slash">/</span> <span id="breadcrumb">DATABASE</span></span><button id="saved-toggle" class="quiet-button" aria-pressed="false">☆ <span>Saved entries</span> <b id="saved-count">0</b></button></header>
     <div class="content">
       <section class="page-heading">
         <div><div class="eyebrow" id="eyebrow">YOUR GUIDE TO THE MARVEL UNIVERSE</div><h1 id="page-title">HEROES <span id="section-count">—</span></h1><p id="page-intro">Loading the compendium…</p></div>
@@ -52,7 +51,7 @@
         <div class="pagination"><label>Show <select id="page-size" aria-label="Entries per page"><option>24</option><option>48</option><option>96</option></select> entries</label><div><button id="prev" aria-label="Previous page">←</button><span id="page-info"></span><button id="next" aria-label="Next page">→</button></div></div>
       </section>
       <section id="guide-view" class="guide-view" hidden></section>
-      <footer class="footer"><span>MARVEL HEROES <span class="muted">/ COMPENDIUM</span></span><span>Heroes. Gear. Every adventure. <a href="#guide/sources">Credits & sources ↗</a></span></footer>
+      <footer class="footer"><span>MARVEL COSMIC CRISIS <span class="muted">/ COMPENDIUM</span></span><span>Heroes. Gear. Every adventure. <a href="#guide/sources">Credits & sources ↗</a></span></footer>
     </div>
   </main>
   <dialog id="detail" aria-labelledby="detail-title"><div id="detail-body"></div><button id="close-detail" class="close-detail" aria-label="Close entry">×</button></dialog>

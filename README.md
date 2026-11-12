@@ -1,6 +1,6 @@
-# Marvel Heroes Compendium
+# Marvel Cosmic Crisis Compendium
 
-A standalone Marvel Heroes reference site using the Command Center's navy/cyan/metallic visual theme and existing MARVEL logo.
+A standalone Marvel Heroes reference site using the Command Center's navy/cyan/metallic visual theme and supplied Marvel Cosmic Crisis logo.
 
 Repository: [kalvx/marvelheroes](https://github.com/kalvx/marvelheroes).
 

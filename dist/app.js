@@ -41,7 +41,7 @@ function navigate() {
   $('category-filter').innerHTML='<option value="">All '+(state.section==='heroes'?'archetypes':state.section==='saved'?'sections':'categories')+'</option>'+categories.map(c=>`<option value="${esc(c)}">${esc(c.replace(/\n/g,' / '))}</option>`).join('');
   if(!categories.includes(state.filter))state.filter=''; $('category-filter').value=state.filter;
   $('category-filter').parentElement.hidden=!categories.length;
-  document.title=section.title+' · Marvel Heroes Compendium';
+  document.title=section.title+' · Marvel Cosmic Crisis Compendium';
   render();
   const entry=params.get('entry'); if(entry){const record=state.recordMap.get(entry); if(record)openDetail(record);else toast('This entry could not be found.');}
 }
@@ -139,7 +139,7 @@ function showGuide(key) {
     title='Credits & sources';intro='A reference built around the Marvel Heroes experience.';
     html=`<div class="guide-grid"><article class="guide-block"><div class="number">01 / CATALOG</div><h2>AlexBond / MHBugle</h2><p>Hero, item, power, vendor and world-reference facts are drawn from the MHBugle Item Base catalog.</p><a class="source-link" href="https://itembase.mhbugle.com/heroes/" target="_blank" rel="noopener noreferrer">Visit the source catalog ↗</a><p>Catalog entries span multiple releases. A listed record does not by itself establish availability in the current edition.</p></article><article class="guide-block"><div class="number">02 / CURRENT EDITION</div><h2>Our game, our presentation</h2><p>The field guides reflect our current camera, controller features, hero-choice flow, currency conversion and saved gameplay presets. The visual theme follows the Marvel Command Center.</p><p>Imported pages contain reference facts and artwork. Account records and connection settings are excluded.</p></article><article class="guide-block"><div class="number">03 / ARTWORK</div><h2>Marvel Heroes</h2><p>Marvel names, characters and artwork belong to their respective owners. The MARVEL logo and game artwork are used to identify the game and its catalog entries.</p><small>This compendium is not affiliated with or endorsed by Marvel Entertainment or Gazillion.</small></article><article class="guide-block"><div class="number">04 / YOUR REFERENCE SHELF</div><h2>Saved on this device</h2><p>Star an entry to keep it in Saved entries. Your saved list and display preference stay in this browser. No sign-in is required.</p><p>The catalog and its artwork are bundled with the compendium, so browsing does not depend on the original catalog responding.</p></article></div>`;
   }
-  $('page-title').firstChild.textContent=title.toUpperCase();$('page-intro').textContent=intro;$('guide-view').innerHTML=html;document.title=title+' · Marvel Heroes Compendium';
+  $('page-title').firstChild.textContent=title.toUpperCase();$('page-intro').textContent=intro;$('guide-view').innerHTML=html;document.title=title+' · Marvel Cosmic Crisis Compendium';
   if(key==='gameplay'){$('currency-input').addEventListener('input',calculateCurrency);calculateCurrency();}
 }
 

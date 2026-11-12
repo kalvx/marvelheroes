@@ -56,7 +56,7 @@ def main():
         item['icon'] = local_image(item.get('icon'))
     DIST.mkdir(parents=True, exist_ok=True)
     (DIST / 'assets').mkdir(exist_ok=True)
-    shutil.copy2(ROOT.parent / 'MarvelCommandCenter' / 'app' / 'Assets' / 'marvel-logo.png', DIST / 'assets' / 'marvel-logo.png')
+    shutil.copy2(ROOT / 'assets' / 'brand' / 'cosmic-crisis-logo.png', DIST / 'assets' / 'cosmic-crisis-logo.png')
     (DIST / 'catalog.json').write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     (CACHE / 'assembly-report.json').write_text(json.dumps({'records': sum(len(s['records']) for s in data['sections']), 'detailFacts': len(data['details']), 'missionRoutes': len(routes), 'missingArtwork': sorted(missing)}, indent=2), encoding='utf-8')
     print(f'Assembled {sum(len(s["records"]) for s in data["sections"])} entries, {len(data["details"])} fact sheets, {len(routes)} mission routes; {len(missing)} artwork files pending.')

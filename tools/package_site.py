@@ -24,6 +24,7 @@ def main():
     target = ROOT / 'MarvelHeroes-Compendium-Source.zip'
     selected = files + sorted((ROOT / 'tools').glob('*.py')) + sorted((ROOT / 'tools').glob('*.cjs'))
     selected += [ROOT / 'README.md', ROOT / '.gitignore', ROOT / 'Start-Preview.ps1', ROOT / '.github' / 'workflows' / 'pages.yml']
+    selected += sorted((ROOT / 'assets' / 'brand').glob('*.png'))
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for path in selected:
             archive.write(path, path.relative_to(ROOT).as_posix())

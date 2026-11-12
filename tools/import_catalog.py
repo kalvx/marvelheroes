@@ -234,7 +234,7 @@ def main():
     (CACHE / 'import-report.json').write_text(json.dumps({'sections': {s['id']: len(s['records']) for s in catalog}, 'details': len(details)}, indent=2), encoding='utf-8')
     assets = DIST / 'assets'
     assets.mkdir(exist_ok=True)
-    shutil.copy2(ROOT.parent / 'MarvelCommandCenter' / 'app' / 'Assets' / 'marvel-logo.png', assets / 'marvel-logo.png')
+    shutil.copy2(ROOT / 'assets' / 'brand' / 'cosmic-crisis-logo.png', assets / 'cosmic-crisis-logo.png')
     print('Catalog export complete.', flush=True)
 
 
